@@ -22,6 +22,7 @@ public class Execute {
 		PrintNode.printNode(rev);
 		//head.next.next.next.next.next = new Node(0);
 		
+		
 		PrintNode.printNode(head);
 		head = Reverse.reverse(head);
 		
@@ -35,6 +36,10 @@ public class Execute {
 		
 		Node MergeResult = MergeSortedList.merge(one, two);
 		System.out.println("Merged result -- >" );
+		PrintNode.printNode(MergeResult);
+		System.out.println("Remove last 4rd value -- >" );
+		RemoveNthNodeFromEnd.removeNthNodeFromEnd(MergeResult, 4);
+		
 		PrintNode.printNode(MergeResult);
 		
 		Node head1 = new Node(6);
