@@ -44,11 +44,15 @@ public class Execute {
 		head1.next.next.next.next = new Node(7);
 		head1.next.next.next.next.next = new Node(12);
 		
-		//head1.next.next.next.next.next = head1.next.next;
+		head1.next.next.next.next.next = head1.next.next;
 		System.out.print("Loop Exist ? -- >" );
 		System.out.println(LoopDetection.loopdetection(head1));
-		//head1 = CanceledOut.canceledOut(head1);
-		//PrintNode.printNode(head1);
+		System.out.println(RemoveLoop.findLoop(head1));
+		PrintNode.printNode(head1);
+		
+		System.out.print("Cancel out please ? -- >" );
+		head1 = CanceledOut.canceledOut(head1);
+		PrintNode.printNode(head1);
 		
 	}
 

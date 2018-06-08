@@ -4,7 +4,7 @@ public class LoopDetection {
 	public static boolean loopdetection(Node n){
 		if(n == null || n.next == null) return false;
 		Node slow = n;
-		Node fast = n.next;
+		Node fast = n;
 		while(slow.next != null && fast.next != null && fast.next.next != null){
 			if( slow == fast){
 				return true;
