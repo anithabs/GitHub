@@ -17,17 +17,17 @@ public class Execute {
 		Node two = new Node(1);
 		two.next = new Node(4);
 		two.next.next = new Node(6);
-		
-		Node rev = ReverseByGroup.reverseByGroup(head, 3);
+		PrintNode.printNode(head);
+		Node rev = ReverseByGroup.reverseByGroup(head, 2);
+		PrintNode.printNode(rev);
+		rev = ReverseByGroupAlternate.reverseByGroupAlternate(head, 2);
 		PrintNode.printNode(rev);
 		//head.next.next.next.next.next = new Node(0);
 		
 		
 		PrintNode.printNode(head);
 		head = Reverse.reverse(head);
-		
 		head = AddOne.addOne(head);
-		
 		head = Reverse.reverse(head);
 		PrintNode.printNode(head);	
 		
@@ -58,6 +58,17 @@ public class Execute {
 		System.out.print("Cancel out please ? -- >" );
 		head1 = CanceledOut.canceledOut(head1);
 		PrintNode.printNode(head1);
+		
+		Node head2 = new Node(6);
+		head2.next = new Node(3);
+		head2.next.next = new Node(2);
+		head2.next.next.next = new Node(2);
+		head2.next.next.next.next = new Node(3);
+		head2.next.next.next.next.next = new Node(6);
+		PrintNode.printNode(head2);
+		System.out.println(" Is head2 Palindrome ?" + Palindrome.palindrome(head2));
+		System.out.println(" Is head1 Palindrome ?" + Palindrome.palindrome(head1));
+		
 		
 	}
 
