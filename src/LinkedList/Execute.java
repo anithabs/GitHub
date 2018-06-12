@@ -72,4 +72,25 @@ public class Execute {
 		
 	}
 
+	
+	
+	
+	public static String function( String s, String w){
+	   String[]  str1 = s.split(" ");
+	   String[]  str2 = w.split(" ");
+	   StringBuilder str = new StringBuilder();
+	   for ( int  i = 0; i < str2.length ; i++){
+		  boolean check = false;
+		  for (int j = 0 ; j < str1.length ; j ++){  
+			  if( str1[i] !=  str2[j]){
+				  check =true;
+			  }
+		  }
+		  if( !check){
+			  str.append(str2[i]);
+		  }
+	   }
+	   return str.toString();
+	   
+	}
 }
