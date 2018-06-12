@@ -18,4 +18,9 @@ public class HeightBalanced {
 		if(node == null) return 0;
 		return (Math.max(maxHeight(node.left), maxHeight(node.right)) + 1 );
 	}
+	
+	public static int maxHeight(TreeNodeParent node){
+		if(node == null) return 0;
+		return (Math.max(maxHeight(node.left), maxHeight(node.right)) + 1 );
+	}
 }
