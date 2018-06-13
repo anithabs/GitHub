@@ -1,6 +1,7 @@
 package BinaryTree;
 
 public class LCABTParentPointer {
+	
 	public static void main(String Args[]){
 	   TreeNodeParent root = new TreeNodeParent(1);
 	   root.left = new TreeNodeParent(5);
